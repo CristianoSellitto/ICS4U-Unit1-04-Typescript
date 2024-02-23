@@ -18,10 +18,6 @@ while (true) {
   // Guessed string
   const stringGuess = createPrompt('Choose a number from 1 to 6: ')
 
-  if (stringGuess.value == "quit") {
-    break
-  }
-
   // Convert guess to integer and check for errors
   const intGuess = parseInt(stringGuess.value)
   if (isNaN(intGuess) == true || intGuess > 6 || intGuess < 1) {
